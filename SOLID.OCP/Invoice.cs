@@ -1,36 +1,31 @@
-﻿// ReSharper disable MemberCanBePrivate.Global
-// ReSharper disable ConvertIfStatementToSwitchExpression
-// ReSharper disable ConvertIfStatementToSwitchStatement
-namespace SOLID.OCP;
+﻿namespace SOLID.OCP;
 
 public class Invoice
 {
-    public InvoiceType InvoiceType { get; }
-    
-    public Invoice(InvoiceType invoiceType)
+    public virtual double GetInvoiceDiscount(double amount)
     {
-        InvoiceType = invoiceType;
-    }
-    
-    public double GetInvoiceDiscount(double amount)
-    {
-        double finalAmount = 0;
-        if (InvoiceType == InvoiceType.FinalInvoice)
-        {
-            finalAmount = amount - 100;
-        }
-        else if (InvoiceType == InvoiceType.ProposedInvoice)
-        {
-            finalAmount = amount - 50;
-        }
-        // No implementation for recurring invoice; returns 0
-        return finalAmount;
+        return amount - 10;
     }
 }
-
-public enum InvoiceType
+    
+public class FinalInvoice : Invoice
 {
-    FinalInvoice,
-    ProposedInvoice,
-    RecurringInvoice
-};
+    public override double GetInvoiceDiscount(double amount)
+    {
+        return base.GetInvoiceDiscount(amount) - 50;
+    }
+}
+public class ProposedInvoice : Invoice
+{
+    public override double GetInvoiceDiscount(double amount)
+    {
+        return base.GetInvoiceDiscount(amount) - 40;
+    }
+}
+public class RecurringInvoice : Invoice
+{
+    public override double GetInvoiceDiscount(double amount)
+    {
+        return base.GetInvoiceDiscount(amount) - 30;
+    }
+}
