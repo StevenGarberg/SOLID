@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.OCP", "SOLID.OCP\SOLID.OCP.csproj", "{9953DB21-060E-415F-A42E-3B8C30F0B011}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOLID.OCP", "SOLID.OCP\SOLID.OCP.csproj", "{5C23B468-7CDA-4F49-9420-55BA5984B8AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9953DB21-060E-415F-A42E-3B8C30F0B011}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9953DB21-060E-415F-A42E-3B8C30F0B011}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9953DB21-060E-415F-A42E-3B8C30F0B011}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9953DB21-060E-415F-A42E-3B8C30F0B011}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C23B468-7CDA-4F49-9420-55BA5984B8AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C23B468-7CDA-4F49-9420-55BA5984B8AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C23B468-7CDA-4F49-9420-55BA5984B8AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C23B468-7CDA-4F49-9420-55BA5984B8AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
