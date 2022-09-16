@@ -1,3 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using SOLID.OCP;
 
-Console.WriteLine("Hello, World!");
+var FInvoice = new Invoice();
+var PInvoice = new Invoice();
+var RInvoice = new Invoice();
+
+double FInvoiceAmount = FInvoice.GetInvoiceDiscount(10000, InvoiceType.FinalInvoice);
+double PInvoiceAmount = PInvoice.GetInvoiceDiscount(10000, InvoiceType.ProposedInvoice);
+double RInvoiceAmount = RInvoice.GetInvoiceDiscount(10000, InvoiceType.RecurringInvoice);
+
+Console.ReadKey();
