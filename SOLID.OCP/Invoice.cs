@@ -1,6 +1,11 @@
 ﻿namespace SOLID.OCP;
 
-public class Invoice
+public interface IDiscountable
+{
+    double GetInvoiceDiscount(double amount);
+}
+
+public class Invoice : IDiscountable
 {
     public virtual double GetInvoiceDiscount(double amount)
     {

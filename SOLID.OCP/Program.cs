@@ -1,8 +1,8 @@
 ﻿using SOLID.OCP;
 
-Invoice FInvoice = new FinalInvoice();
-Invoice PInvoice = new ProposedInvoice();
-Invoice RInvoice = new RecurringInvoice();
+IDiscountable FInvoice = new FinalInvoice();
+IDiscountable PInvoice = new ProposedInvoice();
+IDiscountable RInvoice = new RecurringInvoice();
 
 double FInvoiceAmount = FInvoice.GetInvoiceDiscount(10000);
 double PInvoiceAmount = PInvoice.GetInvoiceDiscount(10000);
